@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Autocomplete</title>
+	<link rel="stylesheet" href="css/autocomplete.css">
+	<script type="text/javascript" src="javascript/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<h1 style="width: 500px; margin: 0 auto; text-align: center">Страница листается</h1>
+	<form action="" id="search-form">
+		<div class="relative-div">
+			<lable class="input-label" for="city-field">Город</lable>
+			<input type="text" class="city-input" placeholder = "Начните вводить название" id="city-field" autocomplete="off" name="city" spellcheck="false">
+			<ul class="list-cities hidden" id="list"></ul>
+			<div class="id-value">Значение не найдено</div>
+		</div>
+	</form>
+	<script src="javascript/autocomplete.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body {
+	font-family: "Segoe UI", "PT Sans", Arial;
+	color: #404040;
+	font-size: 14px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+/* INPUT */
+.city-input {
+	display: inline-block;
+	border: 1px solid #d4d4d4;
+	border-top: 1px solid #b4b4b4;
+	width: 180px;
+	height: 20px;
+	padding-left: 6px;
+	outline: none;
+}
+
+.city-input::-webkit-input-placeholder {text-overflow:ellipsis;	color: #aaa; }
+
+.city-input::-moz-placeholder			 {text-overflow:ellipsis; color: #aaa; }
+
+.city-input:-moz-placeholder			 {text-overflow:ellipsis; color: #aaa; }
+
+.city-input:-ms-input-placeholder		 {text-overflow:ellipsis; color: #aaa; }
+
+
+.city-input:hover			{ border-top: 1px solid #929292; }
+
+.city-input:disabled:hover	{ border-top: 1px solid #b4b4b4; }
+
+
+.city-input:focus::-webkit-input-placeholder	{ color: #bdbdbd; }
+
+.city-input:focus::-moz-placeholder				{ color: #bdbdbd; }
+
+.city-input:focus:-moz-placeholder				{ color: #bdbdbd; }
+
+.city-input:focus:-ms-input-placeholder			{ color: #bdbdbd; }
+
+
+.city-input::selection		{ background: #a8d1ff }
+
+.city-input::-moz-selection	{ background: #a8d1ff }
+
+
+.city-input.focus	{ border: 1px solid #7da5ed; }
+
+.city-input.error	{ border: 1px solid #d00; }
+
+.city-input.warning	{ border: 1px solid orange; }
+
+
+/* LABEL */
+.input-label {
+	display: inline-block;
+	line-height: 20px;
+	font-size: 12px;
+	margin-right: 35px;
+	position: relative;
+}
+
+
+/* LIST */
+.list-cities {
+	position: absolute;
+	min-width: 210px;
+	max-width: 400px;
+	max-height: 125px;
+	overflow: hidden;
+	border: .7px solid lightgray;
+	box-shadow: 0 3px 10px rgba(0,0,0,.25);
+
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0;
+	left: 42.3px;
+	top: 24px;
+}
+
+.list-cities.hidden { display: none; }
+
+.list-cities-item {
+	display: block;
+	height: 25px;
+	width: 100%;
+}
+
+.list-cities-link, 
+.list-cities-err-request-link {
+	background: transparent;
+	display: block;
+	width: 100%;
+	text-align: left;
+	padding-left: 6px;
+	padding-right: 6px;
+	line-height: 25px;
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+}
+
+.list-cities-link.selected, 
+.list-cities-err-request-link.selected {
+	background: #5B8FD6;
+	color: white;
+}
+
+.list-cities-link.chosen			{ background: #eee; color: black; }
+
+.list-cities-link.not-found			{ color: #aaa; cursor: default; }
+
+.list-cities-link.not-found:hover	{ background: white; color: #aaa; }
+
+.container {
+	margin: 0;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-top: 800px;	/* Для теста выпада списка сверху и    */
+	height: 1000px;		/* снизу с разным количеством записей  */
+	padding-left: 40%;
+}
+
+.list-cities-prompt	{ max-width: 213px; }
+
+.prompt {
+	margin: 10px;
+	color: #888;
+	font-size: 12px;
+}
+
+.id-value {
+	display: none;
+	position: absolute;
+	left: 73px;
+	padding-top: 5px;
+	top: 24px;
+}
+
+.id-value.warning {
+	display: inline-block;
+	color: orange;
+	top: 51px;
+}
+
+.id-value.error {
+	display: inline-block;
+	color: #d00;
+	top: 24px;
+}
+
+.id-value.filled {
+	display: inline-block;
+	color: black;
+	top: 24px;
+}
+
+.relative-div {
+	position: relative;
+}
+
+#search-form {
+	width: 500px;
+	margin: 900px auto;
+
+}
